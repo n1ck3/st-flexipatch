@@ -484,6 +484,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Page_Up,     scrolltoprompt,  {.i = -1}, S_PRI },
 	{ ControlMask,          XK_Page_Down,   scrolltoprompt,  {.i =  1}, S_PRI },
 	#endif // OSC133_PATCH
+	// Nicke's cool shortcuts
+	{ ShiftMask,            XK_Return,      ttysend,         {.s =  "\n"} },
 };
 
 /*
@@ -745,6 +747,8 @@ static Key key[] = {
 	{ XK_F33,           XK_NO_MOD,      "\033[20;5~",    0,    0},
 	{ XK_F34,           XK_NO_MOD,      "\033[21;5~",    0,    0},
 	{ XK_F35,           XK_NO_MOD,      "\033[23;5~",    0,    0},
+	// Nicke's cool key thing
+	{ XK_Return,        ShiftMask,      "\n",			 0,    0},
 };
 #endif // FIXKEYBOARDINPUT_PATCH
 
